@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Add content</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1></h1>
+        <div id="info"></div>
+        <script>
+            //create a var msg to hold the info associated with the window
+            var msg = '<h2>Browser Window </h2><p>Width: ' + 
+                window.innerWidth + '</p>';
+
+            msg += '<p>Height: ' + window.innerHeight + '</p>';
+
+            msg += '<h2>History</h2><p> Items:' + window.history.length + '</p>';
+
+            msg += '<h2>Screen  </h2><p>Width: ' + 
+                window.screen.width + '</p>';
+
+            msg += '<p>Height: ' + window.screen.height + '</p>';
+
+            var el = document.getElementById('info');
+            el.innerHTML = msg;
+            //alert("Current page: " + window.location);
+        </script>
+        <footer>
+                <br /><br />
+                <hr>
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Basic Function</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Travel Worthy</h1>        
+        <div id="message"></div>
+          
+        <script>
+            var msg = 'Sign up to receive our newsletter for 10% off!'
+            //Create a function to update tjhe content
+            //of the el with id values of message
+            function updateMessage(){
+                var el = document.getElementById('message');
+                el.textContent = msg;
+            }
+            //call function
+            updateMessage();
+        </script>
+        <footer>
+                <br /><br />
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>JS Instructions</title>
+    </head>
+
+
+    <body>
+
+        <h1>Custom Signage</h1>
+        <div id="cost">Cost: $5 per title</div>
+        <script>
+            //create three vars to store needed info
+            var price;
+            var quantity;
+            var total;
+
+            //initialize
+            price = 5;
+            quantity = 14;
+            // calculate total
+            total = price *  quantity;
+
+            //get element with cost by id
+            var el = document.getElementById("cost");
+            el.textContent = '$' + total;
+        </script>
+    </body>
+
+
+</html>

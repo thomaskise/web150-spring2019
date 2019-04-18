@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Basic Function with Arguments</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Area of Rectangle &amp; Cube</h1>        
+        <div id="recArea">Area</div>
+        <div id="cubeArea">Cube Area</div>
+          
+        <script>
+             //Define a function to calculate the area of a rectangle
+            function getRecArea(width, height){
+                return width * height;
+            }
+             //Define a function to calculate the area of a cube
+             function getCubeArea(length, width, height){
+                return length * width * height;
+            }
+            //call functions
+            var recArea = getRecArea(5, 2);
+            var cubeArea = getCubeArea(5, 2, 5);
+
+            //display areas
+            var elRec = document.getElementById("recArea");
+            elRec.textContent = 'Area of the rectangle is ' + recArea;
+
+            var elCube = document.getElementById("cubeArea");
+            elCube.textContent = 'Area of the cube is ' + cubeArea;
+
+        </script>
+        <footer>
+                <br /><br />
+                <hr>
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>

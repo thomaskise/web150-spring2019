@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document Object</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1></h1>
+        <div id="content">
+                <div id="info">
+                    <span id=""></span>
+                </div>
+            </div>
+        <script>
+            //create a message to hold the info associated with the document object
+            var msg = '<p><b>Page Title: </b>' + document.title + '<br />';
+            msg += '<b>Page Address: </b>' + document.URL + '<br />';
+            msg += '<b>Page Modified: </b>' + document.lastModified;
+            msg += '</p>';
+
+            //display info
+            var el = document.getElementById('info');
+            //write the message
+            el.innerHTML = msg;
+
+        </script>
+        <footer>
+                <br /><br />
+                <hr>
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>

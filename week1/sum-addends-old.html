@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum addends</title>
+    </head>
+    <body>
+        <div id="content">      
+            <div id="welcome">Welcome to my calculator </div>
+            <div id="calculation">The sum of <span id = "addend1">1stnum</span> + <span id = "addend2">2ndnum</span> is : <span id = "sum">answer</span></div>
+        </div>
+        <script>
+        //define vars for addends and sum
+            var welcomeMsg;
+            var addend1 = 5;
+            var addend2 = 7;
+            var sum;
+
+            sum = addend1 + addend2;//do the math
+            //display the calculation
+            // document.write('Welcome to my calculator', '<br>', 'The sum of ', addend1, ' + ', addend2, ' is : ', sum);
+
+            //get elements by id
+            //get welcome
+            // var elWelcome = document.getElementById("welcome");
+            // elWelcome.textContent = welcomeMsg;
+            //message
+            var elNum1 = document.getElementById("addend1");
+            elNum1.textContent = addend1;
+            var elNum2 = document.getElementById("addend2");
+            elNum2.textContent = addend2;
+            var elSum = document.getElementById("sum");
+            elSum.textContent = sum;
+        </script>
+    </body>
+</html>

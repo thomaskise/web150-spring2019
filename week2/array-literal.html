@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Array Literal</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Array Examples</h1>
+        <div id="content">
+            <div id="message">Colors: 
+                <span id="colors">We are unable to fine your color choice. Please try again
+                
+                </span>
+
+            </div>
+
+        </div>
+        <script>
+            //declare array AND ASSIGN VALUES
+            //var colors;
+            //colors = ['white', 'black', 'red', 'blue', 'custom'];
+
+            // with constructor
+            var colors = new Array('white', 'black', 'custom', 'red', 'green')
+
+            console.log("Array length = " + colors.length);
+
+            //update value of the 3rd item
+            colors[4] = 'beige';
+
+            //display a color
+            var el = document.getElementById('colors');
+            el.textContent = colors[4];
+        </script>
+        <footer>
+                <br /><br />
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>

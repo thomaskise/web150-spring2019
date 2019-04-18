@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Travel Worthy</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Travel Worthy</h1>
+        <div id="info">
+            <h2>Hotel Availablity</h2>    
+            <div id="hotelName"></div>
+            <div id="availablitlty"></div>
+            <p id="rooms"></p>
+            <p>rooms left</p>
+        </div>
+    <script>
+        //set up a literal object
+        //declar the object
+        var hotel = {
+            name: 'Quay',
+            rooms: 40,
+            booked: 25,
+            checkAvailability : function(){
+                return this.rooms - this.booked; //need this because it is inside the function
+            }
+        }
+
+        //update the html
+        var elName = document.getElementById("hotelName");
+        elName.textContent = hotel.name; // update with property opf the object
+
+        elRooms = document.getElementById("rooms"); 
+        elRooms.textContent = hotel.checkAvailability(); // update with method of the object
+    </script>
+    <footer>
+            <br /><br />
+            <hr>
+            <p>
+                <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+            </p>
+    </footer>
+    </body>
+</html>
