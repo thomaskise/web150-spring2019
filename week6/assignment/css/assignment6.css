@@ -1,0 +1,113 @@
+/* Portal Website Styles */
+
+html {
+    background-color:#2C3539;
+}
+
+div.wrapper {
+    background-color:#ff0000;
+    font-family: cursive;
+    overflow:auto;
+}
+
+h1 {
+    background-image: url(../images/rubberducky.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    height: 75px;
+    line-height: 75px;
+    width: 500px;
+    margin: 0 auto 0 auto;
+    padding: 100px 10px 20px 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*hr line for footer */
+hr.footer {
+  border: 2px solid; 
+  border-color: #2C3539;
+  border-radius: 2px;
+}
+
+footer {
+	clear:both;
+}
+
+/* here are the table styles */
+
+table {
+    width: 75%;
+    margin: auto;
+    font-family: sans-serif;
+    border-collapse: collapse;
+  }
+
+.t_head {
+	background-color:#4f79bb;
+	color: #fff;
+	text-shadow: 2px 2px 1px #740f0f;
+	border: #000;
+}
+	
+.t_odd {
+	background-color: #914141;
+	color: #fff;
+	text-shadow: 2px 2px 1px #3b6a5e;
+	border: #000;
+}
+	
+.t_even {
+	background-color: #d7666b;
+	color: #fff;
+	text-shadow: 2px 2px 1px #3b6a5e;
+	border: #000;
+}
+
+.t_foot {
+  background-color: #183770;
+	color: #fff;
+	background-position: center, right;
+	background-repeat: no-repeat;
+	border: #000;
+	text-shadow: 2px 2px 1px #333;
+}
+
+td, th {
+    font-size: 1.1em;
+    padding: .5em 1em; /* Top and Bottom; Left and Right1 os 100% of the font-size */
+}
+
+td:last-child,
+td:nth-last-child(1) {
+    text-align: right;
+}
+
+/* START RESPONSIVE STYLES */
+
+.pageWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+    div.wrapper {
+		width:80%;
+		margin:auto;
+	}
+}
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+}
