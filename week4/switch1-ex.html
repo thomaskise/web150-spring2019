@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>If .. Else stratement</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Using switch statement</h1>
+        
+        <section id="demo">answer</section>
+           
+        <script>
+            //vars
+            var day;
+            var dayNum = new Date().getDay();
+
+            // determine day of the week
+            switch(dayNum){
+
+                case 5:
+                    day = "Today is Friday";
+                    break;
+                case 6:
+                    day = "Today is Saturday";
+                    break;
+
+                default:dayNum
+                    day = "Case statement is broken";
+            }
+            document.getElementById("demo").innerHTML =   day;
+
+        </script>
+        <footer>
+                <br /><br />
+                <hr>
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>

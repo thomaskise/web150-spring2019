@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>If .. Else stratement</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Bullseye</h1>
+        
+        <section id="answer">answer</section>
+           
+        <script>
+            //vars
+            var msg;
+            var level=30;
+
+            // determine the message bbased on the levl
+            switch(level){
+                case 1:
+                    msg="Good luck on the first test!"
+                    break;
+                case 2:
+                    msg="Keep going!"
+                    break;
+                case 3:
+                    msg="Perfect!"
+                    break;
+                default:
+                    msg="System out of order!";
+                    break;
+            }
+
+
+            var el = document.getElementById('answer');
+            el.textContent = msg;
+        </script>
+        <footer>
+                <br /><br />
+                <hr>
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>

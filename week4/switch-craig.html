@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Craig string example</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Using switch statement</h1>
+        
+        <section id="demo">answer</section>
+           
+        <script>
+            //vars
+            var url = window.name.pathname;
+            var filename = url.substring(url.lastIndexof('/')+1);
+            var text;
+
+            // determine day of the week
+            switch(animal){
+
+                case 'cat':
+                    text = 'meow';
+                    break;
+                case 'dog':
+                    text = 'ruff';
+                    break;
+                case 'donkey':
+                    text = 'hee-haw';
+                    break;
+                case 'cow':
+                    text = 'moo';
+                    break;
+                case 'bird':
+                    text = 'tweet';
+                    break;
+                default:
+                    TextTrack = "Noise";
+            }
+            document.getElementById("demo").innerHTML =   text;
+
+        </script>
+        <footer>
+                <br /><br />
+                <hr>
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>

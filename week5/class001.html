@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+<style>
+.red {
+    color:red;
+}
+.black {
+    color:black;
+}
+
+</style>
+
+    </head>
+    <body>
+        <h1></h1>
+        <div id="content">
+                <p class="black">paragraph 1</p>
+                <p class="black">paragraph 2</p>
+                <p class="black">paragraph 3</p>
+                <p class="black">paragraph 4</p>
+                <p class="black">paragraph 5</p>
+            </div>
+        <script>
+            var elements = document.getElementsByTagName('p'); // Find <li> elements
+
+            if (elements.length > 0) {  // If 1 or more are found
+                for (i = 0; i < elements.length; i++) { 
+                    var el = elements[i];     // Select the first one using array syntax
+                    el.className = 'red';    // Change the value of the class attribute
+            
+}
+
+            }
+        </script>
+        <footer>
+                <br /><br />
+                <hr>
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>
