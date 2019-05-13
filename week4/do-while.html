@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Do While Loop</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1></h1>
+        <div id="answer">
+        </div>
+        <script>
+            //create a times table
+            var i = 1;
+            var msg = '';
+
+            //construct a 5x time usiong while
+            do {
+                msg += i + ' x 5 = ' + (i * 5) + '<br />';
+                i++;
+            } while (i < 1)
+
+            document.getElementById('answer').innerHTML = msg;
+        </script>
+        <footer>
+                <br /><br />
+                <hr>
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>

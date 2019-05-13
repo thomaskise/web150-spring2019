@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>If .. Else stratement</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Bullseye</h1>
+        
+        <section id="answer">answer</section>
+           
+        <script>
+            //vars
+            var score1 = 4; // round1 score
+            var score2 = 8; // round2 score
+            var pass1 = 6; //round1 passing score
+            var pass2 = 6; //round2 passing score
+            var passBoth = (score1 >= pass1) && (score2 >= pass2 );
+            var msg= "Both rounds passed: " + passBoth + ".";
+
+            // //select message based onthe score
+            // if (passBoth){
+            //     msg = "Both rounds passed: " + passBoth;
+            // } else {
+            //     msg = "try again!";
+            // }
+
+            var el = document.getElementById('answer');
+            el.textContent = msg;
+        </script>
+        <footer>
+                <br /><br />
+                <hr>
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>

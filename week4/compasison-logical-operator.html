@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>If .. Else stratement</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Bullseye</h1>
+        
+        <section id="answer">answer</section>
+           
+        <script>
+            //vars
+            var score1 = 65; // round1 score
+            var score2 = 95; // round2 score
+            var highScore1 = 75; //round1 passing score
+            var highScore2 = 95; //round2 passing score
+            var totalHighScore = 0;     
+            // check if scores are higher than high scord
+            var comparison = (score1 + score2) > (highScore1 + highScore2);
+            
+            //determine total high score
+            if (comparison){
+                var totalHighScore = (score1 + score2);
+            } else {
+                var totalHighScore = (highScore1 + highScore2);
+            }
+
+            //create message
+            var msg= "New high score: " + comparison + ". ";
+            msg += "Current high score is: " + totalHighScore + ". ";
+
+            var el = document.getElementById('answer');
+            el.textContent = msg;
+        </script>
+        <footer>
+                <br /><br />
+                <hr>
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>

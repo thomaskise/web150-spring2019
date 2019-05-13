@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>If .. Else stratement</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Bullseye</h1>
+        
+        <section id="answer">answer</section>
+           
+        <script>
+            //vars
+            var score1 = 5; // round1 score
+            var score2 = 5; // round2 score
+            var pass1 = 6; //round1 passing score
+            var pass2 = 6; //round2 passing score
+                    
+            // use logical or (||) to check if the user passed both rounds
+            var minPass = (score1 >= pass1) || (score2 >= pass2);
+
+            //create message
+            var msg= "Retest required: " + !minPass + ".";
+
+            var el = document.getElementById('answer');
+            el.textContent = msg;
+        </script>
+        <footer>
+                <br /><br />
+                <hr>
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>

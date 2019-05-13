@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1></h1>
+        <div id="content">
+                <div id="message">
+                    <span id=""></span>
+                </div>
+            </div>
+        <script>
+            var num1 = "8";
+            var num2 = 2;
+            var ary1 = ['molly', 'sam'];
+            var ary2 = ['desmond', 'alex'];
+            const a = 100;
+            const b = "test";
+            const c = null;
+            
+            console.log('string impact', num1 / num2);
+            console.log('array impact', ary1 / ary2);
+            console.log('Boolean or 1', a || b); // a || b // 100
+            console.log('Boolean and 1', a && b);// a && b // "test"
+            console.log('Boolean or 2', a || c);// a || c // 100
+            console.log('Boolean and 2', a && c);// a && c // null
+            console.log('Boolean or 3', b || c);// b || c // "test"
+            var newVar = c && b;
+            console.log('newVar b && c', newVar);// b && c // null
+            
+            if(b == "test" && c == 0){
+                console.log('Boolean and true or false');
+            };
+
+            if(b || c == "test"){
+                console.log('Boolean && output');
+            };
+
+            function greet (name) {
+                name = name || 'visitor'
+                console.log(`Hello, ${name}!`)
+            }
+greet('Billy') // Hello, visitor!
+
+        </script>
+        <footer>
+                <br /><br />
+                <hr>
+                <p>
+                    <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML5</a> ~ 
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+                </p>
+        </footer>
+    </body>
+</html>
