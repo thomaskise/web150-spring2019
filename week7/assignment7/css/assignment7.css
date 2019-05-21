@@ -1,0 +1,91 @@
+/* Portal Website Styles */
+
+html {
+    background-color:#2C3539;
+}
+
+div.wrapper {
+    background-color:#ff0000;
+    font-family: cursive;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+  }
+
+  h1 {
+    background-image: url(../images/rubberducky.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 100px 10px 20px 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*hr line for footer */
+hr.footer {
+  border: 2px solid; 
+  border-color: #2C3539;
+  border-radius: 2px;
+}
+
+footer {
+	clear:both;
+}
+
+/* here are the form styles */
+
+.form {
+    margin: auto;
+    font-family: sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+input {
+  text-align: center;
+  font-size: medium;
+  text-emphasis: bold;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input.disabled {
+    background: rgb(177, 179, 180);
+    color: white;
+ }
+
+ #feedback {
+    color: white;
+ }
+
+/* START RESPONSIVE STYLES */
+
+.pageWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+    div.wrapper {
+		width:80%;
+		margin:auto;
+	}
+}
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+}
