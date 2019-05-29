@@ -32,7 +32,7 @@ $(document).ready(function() {
   // function to expand & contract the FAQ Answers
   $(function() {
 
-    $('i').on('click', function() {                 // execute this function on click of the +/- icons
+    $('i').click(function() {                       // execute this function on click of the +/- icons
     $(this).toggleClass("fa fa-minus").             // on first click, toggle to minus sign
             toggleClass("fa fa-plus");              // click again and come back to the plus sign
     $(this).parent().next().slideToggle().          // when clicked, slide the answer text up and down
