@@ -6,39 +6,36 @@
 $(document).ready(function() {
   // animation #1 moves the element far to the right  
   $( "#animate" ).animate({
+      color: "yellow",                              // set transition color
       marginLeft: "+=600px",                        // moves the margin far to the right 
       width: "120%",                                // lets text expand out beyond its borders
       opacity: 0.4,                                 // fade out on expansion
       fontSize: "5em"                               // expand font 
     }, 1200,                                        // expand out fairly quickly
     function() {                                    // set text color
-      $("h2").css("color", "yellow")
+      $("h2").css("display", "block")
     } 
     );
     
-    // animation #2 brings the element back to the left to its final position
+    // animation #2 brings the element back to the left to its resting position
     $( "#animate" ).animate({
+      color: "#003366",                             // set resting text color
       marginLeft: "-=300px",                        // bring the text back into the faq box
       width: "100%",                                // bring text back into the faq box
       opacity: 1.0,                                 // fades back to full opacity
       fontSize: "3em"                               // take the font size down to resting state
     }, 2400,                                        // slow down the move back to a gentle rest
     function() {
-      $("h2").css("color", "#003366");              // set resting text color
       $("#by").writeText(" ~ by: Thom Harrington"); // spell out the author's name
     });    
   });
   
   // function to expand & contract the FAQ Answers
   $(function() {
-
     $('i').click(function() {                       // execute this function on click of the +/- icons
     $(this).toggleClass("fa fa-minus").             // on first click, toggle to minus sign
             toggleClass("fa fa-plus");              // click again and come back to the plus sign
-    $(this).parent().next().slideToggle().          // when clicked, slide the answer text up and down
-            toggleClass("faq_display").             // on first click, toggle answer text down & visible
-            toggleClass("faq_hide");                // on second click, toggle anwer text up & hidden
-    
+    $(this).parent().next().slideToggle();          // when clicked, slide the answer text up and down     
   })
 
   /*
@@ -61,8 +58,8 @@ $(document).ready(function() {
         if(current < contentArray.length) {
           elem.text(elem.text() + contentArray[current++]);
         }
-      }, 200);
+      }, 500);
     }
-  });      
+  });
 
-});
+});// end document.ready
