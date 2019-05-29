@@ -1,0 +1,92 @@
+
+html {
+    background-color:#2C3539;
+}
+
+div.wrapper {
+    background-color:#ff0000;
+    font-family: cursive;
+    width: 400%;
+    margin: auto;
+    align-items: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+h1 {
+    text-align: left;
+    line-height: 80%;
+    margin: 0;
+    padding: 0;
+  }
+  
+h2 {
+    position: relative;
+    left: -300px;
+    text-align: left;
+    white-space: nowrap;
+    margin-top: 0px;
+  }
+  
+.scrunched {
+    color: #2C3539;
+    line-height: 80%
+}
+
+.faq_box {
+  width: 400px;
+  border: 4px solid #2C3539;
+  border-radius: 1.5em;
+  padding: 50px;
+  margin: 0px 100px 0px 100px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.faq_hide {
+  margin-left: 20px;
+  display:none;
+}
+
+.faq_display {
+  margin-left: 20px;
+  display:inline;
+}
+
+/*hr line for footer */
+hr.footer {
+  border: 2px solid; 
+  border-color: #2C3539;
+  border-radius: 2px;
+}
+
+footer {
+  clear:both;
+}
+/* START RESPONSIVE STYLES */
+
+.pageWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+    div.wrapper {
+		width:80%;
+		margin:auto;
+	}
+}
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+}
