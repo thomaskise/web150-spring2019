@@ -13,7 +13,9 @@ div.wrapper {
     padding-right: 0.5em;
   }
 
-.pointer {cursor: pointer;}
+.pointer {
+  cursor: pointer;
+}
 
 h1 {
     text-align: left;
@@ -24,6 +26,7 @@ h1 {
   
 h2 {
     position: relative;
+    opacity: 0;
     left: -300px;
     text-align: left;
     white-space: nowrap;
@@ -54,7 +57,7 @@ h2 {
 
 .faq_display {
   margin-left: 20px;
-  display:inline;
+  display:block;
 }
 
 /*hr line for footer */
