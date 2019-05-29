@@ -40,16 +40,24 @@ $(document).ready(function() {
             toggleClass("faq_hide");                // on second click, toggle anwer text up & hidden
     
   })
+    //change cursor on button hover
+  $(function() {
+    $('i').mouseenter(function() {                  // execute when mouse pointer moves over the +/- icons
+      $(this).css('cursor', 'pointer');             // change the cuorsor to a pointer
+          }).mouseleave(function() {                // when the mouse pointer moves out of range
+      $(this).css('cursor', 'default');             // change cursor back to default setting
+      });
+  })
 
   /*
-  function writeText() takes a text string argument and outputs a character at a time.
-  I found this and thought it was fun, so I included it. I don't take credit for it.
-  
-  Although I made some changes to clean up the code, I don't understand
-  a couple of things about it:
-      1. what is the syntax $.fn doing?
-      2. the orginal function was declared differently and ended with
-        (jquery). What's with that syntax?  
+  ** function writeText() takes a text string argument and outputs a character at a time.
+  ** I found this and thought it was fun, so I included it. I don't take credit for it.
+  ** 
+  ** Although I made some changes to clean up the code, I don't understand
+  ** a couple of things about it:
+  **     1. what is the syntax $.fn doing?
+  **     2. the orginal function was declared differently and ended with
+  **        (jquery). What's with that syntax?  
   */
 
   $(function writeText($){
