@@ -40,14 +40,6 @@ $(document).ready(function() {
             toggleClass("faq_hide");                // on second click, toggle anwer text up & hidden
     
   })
-    //change cursor on button hover
-  $(function() {
-    $('i').mouseenter(function() {                  // execute when mouse pointer moves over the +/- icons
-      $(this).css('cursor', 'pointer');             // change the cuorsor to a pointer
-          }).mouseleave(function() {                // when the mouse pointer moves out of range
-      $(this).css('cursor', 'default');             // change cursor back to default setting
-      });
-  })
 
   /*
   ** function writeText() takes a text string argument and outputs a character at a time.
