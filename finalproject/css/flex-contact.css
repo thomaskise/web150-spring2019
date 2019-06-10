@@ -1,0 +1,289 @@
+/* Primary Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    background-color:#1C062A;
+    color: #cc9423;
+/*    color: #87CEEB;*/
+}
+
+body {    
+    display: flex;
+    flex-direction: row;
+    background-color:#1C062A;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #cc9423;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.0em;
+    Font-style: italic;
+	font-family:  "Black And White Picture", "Lucida Grande", sans-serif;
+}
+
+em {
+   font-style: normal;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+} 
+
+img + p {
+    align-self: center;
+    
+}
+
+section + h2, h3, h4 {
+    text-align: left;
+    
+}
+
+h1 + p {
+    line-height: 1.1em;
+    text-align: right;    
+}
+
+
+/************************************
+ ************************************
+ ***                              ***
+ ***      Mobile First! CSS       ***
+ ***                              ***
+ ************************************
+ ***********************************/
+
+/************************************
+ ************************************
+ ***                              ***
+ ***      Mobile Header CSS       ***
+ ***                              ***
+ ************************************
+ ***********************************/
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: fixed;
+    height: 6.5em;
+    width: 100%;
+    margin: -8px 0 0 0;
+    font-family: sans-serif;
+    background-color: #1C062A;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+    height: inherit;
+    margin: 10px 0 0 0;
+    font-family: sans-serif;
+    width: 15%;
+    max-width: 15%;
+    text-shadow:1px 1px #ccc234;
+    z-index: 0;
+}
+
+.logo img {
+    width: 4em;
+    height: 4em;
+    margin-left: -5px;
+    margin-top: -5px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    height: inherit;
+    padding-right: 1.0em;
+    width: 85%;
+    font-size:0.8em;
+    text-align: right;
+    line-height: 0.1em;
+    z-index: 10
+}
+
+/************************************
+ ************************************
+ ***                              ***
+ ***   Mobile Main Content CSS    ***
+ ***                              ***
+ ************************************
+ ***********************************/
+
+main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: center;
+    padding: 8.5em 1em 0 0;
+    left:15%;
+    width: 100%;
+    z-index: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+    text-align: left;
+    width: auto;
+    padding: 0 1em 0 1em;
+}
+
+aside {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 45%;
+    width: auto;
+}
+
+section img, aside img {
+    display: flex;
+    align-self: center;
+    position:relative;
+    width:90%;
+    z-index: -10;
+}
+
+/************************************
+ ************************************
+ ***                              ***
+ ***      Mobile Footer CSS       ***
+ ***                              ***
+ ************************************
+ ***********************************/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content:flex-end;
+    align-self: flex-end;
+    text-align: right;
+    flex-wrap: nowrap;
+    clear:both;
+    bottom: 0;
+    right: 0;
+    margin: 0 -2em 0 0;
+    padding-right: 1em;
+    width: 100%;
+}
+
+/*hr line for footer */
+hr.footer {
+    border: 2px solid; 
+    border-color: #2C3539;
+    border-radius: 2px;
+    bottom: 0;
+    text-align: right;
+    margin-right: 0;
+    width: 70%;
+}
+
+/************************************
+ ************************************
+ ***                              ***
+ ***   Tables CSS adjustments     ***
+ ***                              ***
+ ************************************
+ ***********************************/
+@media (min-width: 48em) {
+   
+    header{
+        background-color: transparent;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        margin: 2em 0 0 10em;
+        min-width: 45%;
+    }
+    
+    section {
+        min-width: 45%;
+    }
+    
+    aside {
+        display: flex;
+    }
+}
+/************************************
+ ************************************
+ ***                              ***
+ ***   Desktop CSS adjustments    ***
+ ***                              ***
+ ************************************
+ ***********************************/
+
+@media (min-width: 68em) {
+    
+    h1 {
+        font-size: 4.5em;
+        text-align: right;
+    }
+    
+    header {
+        padding: 0 1em 0 0;
+    }
+    
+    .logo {
+        margin: 20px 0 0 0;
+        width: 20%;
+        max-width: 20%;
+    }
+    
+    .logo img {
+        width: 8em;
+        height: 8em;
+        margin: -5px 0 0 15px;
+        }
+    
+    .heading{
+        width: 80%;
+        flex-wrap: nowrap;
+    }
+    
+    .content {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        margin: 0 0 0 15em;
+    }
+    
+    section img {
+        padding: 0 0 0 12em;
+        width: 100%;
+    }
+}

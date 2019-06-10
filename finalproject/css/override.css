@@ -1,0 +1,110 @@
+
+.pointer {
+  cursor: pointer;
+}
+
+/* home page animation */
+#hp-image {
+  display: flex;
+  right: -900px;
+  opacity: .0; 
+}
+
+#yay span {
+  font-size: 2em;
+  color: red;
+}
+
+/* accordion */
+.ui-widget-content {
+  color: #1C062A;
+  background: transparent;
+}
+
+.ui-state-active {
+  color: #1C062A;
+}
+
+.ui-state-default {
+  background: transparent;
+}
+
+.ui-accordion-header-collapsed {
+  background: transparent;
+  font-size: 80%;
+}
+
+.ui-accordion .ui-accordion-header {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin: 2px 0 0 0;
+  padding: 0 0 0 .7em;
+  font-size: 85%;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border: none;
+}
+
+/* jquery validation */
+.error {
+  color: red;
+}
+
+div[role="tooltip"] {
+  background-color: grey;
+}
+
+/* social media tags */
+.socialPlugin .showSocialButtons {
+  color: #1C062A;
+}
+
+#sm::after {
+  content: "Purple Moon Design on Facebook: ";
+}
+
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+/* lightslider */
+ul#image-gallery{
+  list-style: none outside none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.demo .item{
+  margin-bottom: 60px;
+  }
+
+.content-slider li{
+  background-color: #ed3020;
+  text-align: center;
+  color: #FFF;
+}
+
+.content-slider h3 {
+  margin: 0;
+  padding: 70px 0;
+}
+
+.demo{
+  width: 800px;
+}
+
+
+.savedforlater {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+  background: none;
+
+
+  transform-origin: 0 0;
+  transform: rotate(45deg);
+}

@@ -1,0 +1,27 @@
+
+html {
+    background-color:#1C062A;
+    color: #cc9423;
+}
+
+body {    
+
+    background-color:#1C062A;
+    color: #cc9423;
+}
+
+
+/* sidebar.css nav */
+.sidebar-trigger > i {
+    color: #cc9423;
+}
+
+.sidebar-nav ul {
+    background: #1C062A;
+}
+
+/* social media tags */
+.socialPlugin .showSocialButtons {
+    color: #cc9423;
+  }
+  

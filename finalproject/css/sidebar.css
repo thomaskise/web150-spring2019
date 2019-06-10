@@ -1,0 +1,164 @@
+/**
+ *
+ *
+ ************ Sidebar Nav CSS ***********
+ *
+ *
+ **/ 
+
+.sidebar {
+   display: flex;
+/*   flex-direction: column-reverse;*/
+   width: 15%;
+/*   min-height: 100vh;*/
+}
+
+.sidebar-trigger {
+    position: fixed;
+    top: 7.0em;
+    left: 0;
+/*    width: 15%;*/
+/*    height: 8em;*/
+    z-index: 2;
+}
+
+.sidebar-trigger > i {
+   display: inline-block;
+    
+   margin: 0 0 0 0.5em;
+   font-size: xx-large;
+   color: #1C062A;
+}
+
+.sidebar-nav {
+   position: fixed;
+   bottom: 0;
+   left: -15em;
+   overflow:visible;
+   transition: all .3s ease-in;
+   width: 12em;
+   height: 60%;
+   opacity: 0.80;
+   font-size: 1.1em;
+   line-height: .5em;
+   z-index: 100;
+}
+
+.sidebar-nav:hover,
+.sidebar-nav:focus,
+.sidebar-trigger:focus + .sidebar-nav,
+.sidebar-trigger:hover + .sidebar-nav {
+   left: 0;
+}
+
+.sidebar-nav ul {
+   position: absolute;
+   background-color: #cc9423;
+   bottom: 0;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   width: 15em;
+}
+
+.sidebar-nav ul li {
+   width: 100%;
+}
+
+.sidebar-nav-link {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height: 3.5em;
+}
+
+.sidebar-nav-link-selected {
+    color:red;
+}
+
+.sidebar-nav-link em {
+   position: absolute;
+   top: 50%;
+   left: 4em;
+   transform: translateY(-50%);
+}
+
+.sidebar-nav-link:hover {
+   background-color: #88aacb;
+}
+
+.sidebar-nav-link > i {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: inline-block;
+   width: 4em;
+   height: 3.5em;
+}
+
+.sidebar-nav-link > i::before {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/**
+ *
+ *
+ ************ Tablet CSS ***********
+ *
+ *
+ **/
+@media (min-width: 48em) {
+   
+   /* Sidebar */
+   .sidebar-trigger {
+      width: 15%;
+   }
+   
+   .sidebar-nav {
+      width: 4em;
+      left: 0;
+   }
+   
+   .sidebar-nav:hover,
+   .sidebar-nav:focus,
+   .sidebar-trigger:hover + .sidebar-nav,
+   .sidebar-trigger:focus + .sidebar-nav {
+      width: 15em;
+   }
+}
+/************************************
+ ************************************
+ ***                              ***
+ ***         Desktop CSS          ***
+ ***                              ***
+ ************************************
+ ***********************************/
+    
+/*
+ @document  url("https://kiseharrington.com/web120/fp/index.php") {
+     section img {
+         top: 8em;
+         left: 5em;
+     }
+    }
+*/
+
+@media (min-width: 68em) {
+    
+    /* Sidebar */
+    .sidebar-trigger i {
+        visibility: hidden;
+    }
+
+    .sidebar-nav {
+        height: 20%;
+    }
+
+    
+    .sidebar-nav-link {
+        background-color: transparent;
+    }
+}
